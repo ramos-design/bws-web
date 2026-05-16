@@ -932,9 +932,17 @@ strong { color: var(--navy-900); font-weight: 700; }
   .hero-eyebrow-full { display: none; }
   .hero-eyebrow-short { display: inline; }
   .hero-title { font-size: clamp(2.2rem, 9vw, 3.4rem); }
-  .hero-phone { padding: 12px 18px 12px 14px; }
-  .hero-phone-icon { width: 42px; height: 42px; }
-  .hero-phone-num { font-size: 1.2rem; }
+  .hero-cta {
+    gap: 12px 20px;
+    margin-bottom: 40px;
+  }
+  .hero-phone {
+    gap: 14px;
+    padding: 8px 18px 8px 8px;
+  }
+  .hero-phone-icon { width: 40px; height: 40px; }
+  .hero-phone-label { font-size: 10px; }
+  .hero-phone-num { font-size: 1.15rem; }
   .hero-phone-arrow { display: none; }
   .hero-secondary { font-size: 15px; }
   .hero-stats {
