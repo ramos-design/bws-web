@@ -295,7 +295,10 @@ strong { color: var(--navy-900); font-weight: 700; }
   background: var(--accent);
   box-shadow: 0 0 12px var(--accent);
   animation: pulseLight 2s ease-in-out infinite;
+  flex-shrink: 0;
 }
+.hero-eyebrow-short { display: none; }
+.hero-eyebrow-full { display: inline; }
 @keyframes pulseLight {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.6; transform: scale(0.85); }
@@ -918,13 +921,16 @@ strong { color: var(--navy-900); font-weight: 700; }
   .cta-final { padding: 72px 0 96px; }
 
   .hero-eyebrow {
-    font-size: 10.5px;
-    letter-spacing: 0.12em;
-    padding: 6px 12px;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    padding: 6px 14px;
     gap: 8px;
     margin-bottom: 22px;
+    white-space: nowrap;
   }
   .hero-eyebrow-dot { width: 6px; height: 6px; }
+  .hero-eyebrow-full { display: none; }
+  .hero-eyebrow-short { display: inline; }
   .hero-title { font-size: clamp(2.2rem, 9vw, 3.4rem); }
   .hero-phone { padding: 12px 18px 12px 14px; }
   .hero-phone-icon { width: 42px; height: 42px; }
