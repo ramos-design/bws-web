@@ -376,9 +376,9 @@ strong { color: var(--navy-900); font-weight: 700; }
   flex-shrink: 0;
 }
 .hero-phone-num {
-  font-size: clamp(1.3rem, 2.2vw, 1.55rem);
-  font-weight: 900;
-  letter-spacing: -0.01em;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 .hero-secondary {
   display: inline-flex;
@@ -388,7 +388,7 @@ strong { color: var(--navy-900); font-weight: 700; }
   padding: 0 36px;
   color: #fff;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0.01em;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.08);
@@ -927,11 +927,11 @@ strong { color: var(--navy-900); font-weight: 700; }
     padding: 0 22px 0 6px;
   }
   .hero-phone-icon { width: 48px; height: 48px; }
-  .hero-phone-num { font-size: 1.15rem; }
+  .hero-phone-num { font-size: 15px; }
   .hero-secondary {
     height: 60px;
     padding: 0 26px;
-    font-size: 14px;
+    font-size: 15px;
   }
   .hero-secondary { font-size: 15px; }
   .hero-stats {
