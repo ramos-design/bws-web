@@ -342,8 +342,9 @@ strong { color: var(--navy-900); font-weight: 700; }
 .hero-phone {
   display: inline-flex;
   align-items: center;
-  gap: 18px;
-  padding: 16px 26px 16px 18px;
+  gap: 16px;
+  height: 72px;
+  padding: 0 28px 0 8px;
   border-radius: 999px;
   background: #fff;
   color: var(--navy-900);
@@ -366,7 +367,7 @@ strong { color: var(--navy-900); font-weight: 700; }
 .hero-phone:hover { transform: translateY(-2px); box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35), 0 6px 14px rgba(0, 0, 0, 0.2); }
 .hero-phone:hover::before { opacity: 1; }
 .hero-phone-icon {
-  width: 48px; height: 48px;
+  width: 56px; height: 56px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--navy-800), var(--navy-600));
   color: #fff;
@@ -374,29 +375,17 @@ strong { color: var(--navy-900); font-weight: 700; }
   place-items: center;
   flex-shrink: 0;
 }
-.hero-phone-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-.hero-phone-label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
 .hero-phone-num {
-  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+  font-size: clamp(1.3rem, 2.2vw, 1.55rem);
   font-weight: 900;
   letter-spacing: -0.01em;
-  margin-top: 3px;
 }
 .hero-secondary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 18px 32px;
+  height: 72px;
+  padding: 0 36px;
   color: #fff;
   font-weight: 700;
   font-size: 15px;
@@ -929,17 +918,21 @@ strong { color: var(--navy-900); font-weight: 700; }
   .hero-eyebrow-short { display: inline; }
   .hero-title { font-size: clamp(2.2rem, 9vw, 3.4rem); }
   .hero-cta {
-    gap: 12px 20px;
+    gap: 12px;
     margin-bottom: 40px;
   }
   .hero-phone {
-    gap: 14px;
-    padding: 8px 18px 8px 8px;
+    height: 60px;
+    gap: 12px;
+    padding: 0 22px 0 6px;
   }
-  .hero-phone-icon { width: 40px; height: 40px; }
-  .hero-phone-label { font-size: 10px; }
+  .hero-phone-icon { width: 48px; height: 48px; }
   .hero-phone-num { font-size: 1.15rem; }
-  .hero-secondary { padding: 14px 22px; font-size: 14px; }
+  .hero-secondary {
+    height: 60px;
+    padding: 0 26px;
+    font-size: 14px;
+  }
   .hero-secondary { font-size: 15px; }
   .hero-stats {
     gap: 24px;
