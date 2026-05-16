@@ -332,9 +332,9 @@ strong { color: var(--navy-900); font-weight: 700; }
 
 .hero-cta {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
-  gap: 16px 28px;
+  gap: 16px 20px;
   margin-bottom: 56px;
 }
 
@@ -396,7 +396,7 @@ strong { color: var(--navy-900); font-weight: 700; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 18px 28px;
+  padding: 18px 32px;
   color: #fff;
   font-weight: 700;
   font-size: 15px;
