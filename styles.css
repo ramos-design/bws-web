@@ -921,12 +921,13 @@ strong { color: var(--navy-900); font-weight: 700; }
   .cta-final { padding: 72px 0 96px; }
 
   .hero-eyebrow {
-    font-size: 11px;
-    letter-spacing: 0.14em;
-    padding: 6px 14px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
     gap: 8px;
     margin-bottom: 22px;
     white-space: nowrap;
+    max-width: 100%;
   }
   .hero-eyebrow-dot { width: 6px; height: 6px; }
   .hero-eyebrow-full { display: none; }
