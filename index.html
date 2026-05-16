@@ -69,9 +69,10 @@
       <a href="#kontakt">Kontakt</a>
     </nav>
 
-    <a href="tel:+420731514647" class="btn btn-primary header-cta">
+    <a href="tel:+420731514647" class="btn btn-primary header-cta" aria-label="Zavolat 731 514 647">
       <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.24 1.02z"/></svg>
-      <span>731 514 647</span>
+      <span class="header-cta-short">Zavolat</span>
+      <span class="header-cta-full">731 514 647</span>
     </a>
   </div>
 </header>
@@ -80,57 +81,79 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-media" aria-hidden="true">
+      <img src="images/fekalni-vuz.jpg" alt="" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+      <div class="hero-noise"></div>
+    </div>
+
+    <!-- Floating secondary photo -->
+    <figure class="hero-side-photo" aria-hidden="true">
+      <img src="images/tlakovy-cistic.jpg" alt="" loading="lazy" />
+      <figcaption class="hero-side-tag">
+        <span class="hero-side-dot"></span>
+        Vlastní technika Rioned
+      </figcaption>
+    </figure>
+
     <div class="container hero-inner">
       <div class="hero-content">
-        <span class="eyebrow">BWS RENOVA RAIL s.r.o.</span>
-        <h1>Čištění a&nbsp;údržba,<br/>na kterou se&nbsp;můžete&nbsp;spolehnout.</h1>
-        <p class="lead">
-          Nabízíme komplexní čištění a údržbu pro <strong>domácnosti, firmy, obce
-          i průmyslové objekty</strong> v okolí Frenštátu pod Radhoštěm. Vlastní technika,
-          rychlá domluva, férová cena.
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-dot"></span>
+          BWS RENOVA RAIL · Frenštát pod Radhoštěm
+        </div>
+
+        <h1 class="hero-title">
+          Čištění a&nbsp;údržba,<br/>
+          na kterou je<br/>
+          <span class="hero-title-accent">spolehnutí.</span>
+        </h1>
+
+        <p class="hero-sub">
+          Komplexní služby pro <strong>domácnosti, firmy, obce i&nbsp;průmyslové objekty</strong>.
+          Vlastní technika, rychlá domluva, férová cena.
         </p>
 
-        <div class="cta-row">
-          <a href="tel:+420731514647" class="btn btn-primary btn-lg">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.24 1.02z"/></svg>
-            Zavolat 731&nbsp;514&nbsp;647
+        <div class="hero-cta">
+          <a href="tel:+420731514647" class="hero-phone" aria-label="Zavolat na číslo 731 514 647">
+            <span class="hero-phone-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.57 1 1 0 0 1-.24 1.02z"/></svg>
+            </span>
+            <span class="hero-phone-text">
+              <span class="hero-phone-label">Zavolejte nám</span>
+              <span class="hero-phone-num">731&nbsp;514&nbsp;647</span>
+            </span>
+            <span class="hero-phone-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
           </a>
-          <a href="#sluzby" class="btn btn-ghost btn-lg">Naše služby</a>
+          <a href="#sluzby" class="hero-secondary">
+            <span>Naše služby</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
         </div>
 
-        <ul class="hero-badges" role="list">
-          <li><span class="dot"></span>Vlastní technika</li>
-          <li><span class="dot"></span>Vše po telefonické domluvě</li>
-          <li><span class="dot"></span>Frenštát pod Radhoštěm a okolí</li>
-        </ul>
-      </div>
-
-      <div class="hero-card" aria-label="Rychlý kontakt">
-        <div class="hero-card-top">
-          <span class="hero-card-label">Vše po telefonické domluvě</span>
-          <h2 class="hero-card-phone">
-            <a href="tel:+420731514647">731&nbsp;514&nbsp;647</a>
-          </h2>
-          <p>Ozvěte se a&nbsp;domluvíme se na všem potřebném — termín, cena, místo.</p>
-        </div>
-        <a href="tel:+420731514647" class="btn btn-primary btn-block">Zavolat hned</a>
-        <div class="hero-card-foot">
-          <div>
+        <div class="hero-stats" role="list">
+          <div role="listitem">
             <strong>9</strong>
-            <span>služeb</span>
+            <span>specializovaných služeb</span>
           </div>
-          <div>
+          <div role="listitem">
             <strong>11+</strong>
-            <span>obcí v okolí</span>
+            <span>obcí v okolí Frenštátu</span>
           </div>
-          <div>
+          <div role="listitem">
             <strong>1,5&nbsp;m³</strong>
-            <span>fekální stroj</span>
+            <span>vlastní fekální vůz</span>
           </div>
         </div>
       </div>
     </div>
+
+    <a href="#sluzby" class="hero-scroll" aria-label="Posunout dolů na služby">
+      <span class="hero-scroll-line"></span>
+      <span class="hero-scroll-label">SCROLL</span>
+    </a>
   </section>
 
   <!-- SERVICES -->
