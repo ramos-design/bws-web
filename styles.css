@@ -917,6 +917,14 @@ strong { color: var(--navy-900); font-weight: 700; }
   .mobile-call { display: inline-flex; }
   .cta-final { padding: 72px 0 96px; }
 
+  .hero-eyebrow {
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    padding: 6px 12px;
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+  .hero-eyebrow-dot { width: 6px; height: 6px; }
   .hero-title { font-size: clamp(2.2rem, 9vw, 3.4rem); }
   .hero-phone { padding: 12px 18px 12px 14px; }
   .hero-phone-icon { width: 42px; height: 42px; }
