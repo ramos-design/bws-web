@@ -1,0 +1,10 @@
+# BWS RENOVA RAIL — robots.txt
+# Vyhledavace i AI crawlery (Googlebot, SeznamBot, Bingbot, GPTBot, ClaudeBot,
+# Claude-Web, PerplexityBot, Google-Extended, Applebot-Extended ad.) jsou vitani.
+# Plati pro ne spolecna pravidla nize.
+
+User-agent: *
+Allow: /
+Disallow: /v2.html
+
+Sitemap: https://bws-web-delta.vercel.app/sitemap.xml

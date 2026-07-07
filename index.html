@@ -4,48 +4,211 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#0f2546" />
-  <title>BWS RENOVA RAIL s.r.o. — Čištění a údržba | Frenštát pod Radhoštěm</title>
-  <meta name="description" content="Tlakové čištění kanalizace a kanalizačních přípojek, kamerová inspekce, vývoz lapolu, tlakové mytí. Hadice až 80 m. Frenštát pod Radhoštěm a okolí. Volejte 731 514 647." />
-  <meta name="keywords" content="čištění kanalizace, kanalizační přípojky, tlakové mytí, vývoz lapolu, čištění žlabů, odstraňování graffiti, kamerová inspekce, Frenštát pod Radhoštěm, Kopřivnice, Rožnov pod Radhoštěm" />
+  <title>Čištění kanalizace Frenštát pod Radhoštěm | BWS RENOVA RAIL</title>
+  <meta name="description" content="Ucpaná kanalizace? Tlakové čištění kanalizace a přípojek, kamerová inspekce, vývoz septiků, jímek a lapolů. Frenštát pod Radhoštěm a okolí. Volejte 731 514 647." />
+  <meta name="keywords" content="čištění kanalizace, ucpaná kanalizace, krtkování, kanalizační přípojky, kamerová inspekce kanalizace, tlakové mytí, vývoz septiku, vývoz jímky, vývoz lapolu, čištění žlabů, odstraňování graffiti, Frenštát pod Radhoštěm, Kopřivnice, Rožnov pod Radhoštěm" />
   <meta name="author" content="BWS RENOVA RAIL s.r.o." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://bws-web-delta.vercel.app/" />
+
+  <!-- Lokální SEO -->
+  <meta name="geo.region" content="CZ-80" />
+  <meta name="geo.placename" content="Frenštát pod Radhoštěm" />
+  <meta name="geo.position" content="49.581;17.962" />
+  <meta name="ICBM" content="49.581, 17.962" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="BWS RENOVA RAIL s.r.o. — Čištění a údržba" />
-  <meta property="og:description" content="Tlakové čištění kanalizace a kanalizačních přípojek, kamerová inspekce. Volejte 731 514 647." />
+  <meta property="og:site_name" content="BWS RENOVA RAIL" />
+  <meta property="og:title" content="Čištění kanalizace Frenštát pod Radhoštěm | BWS RENOVA RAIL" />
+  <meta property="og:description" content="Tlakové čištění kanalizace a přípojek (hadice až 80 m), kamerová inspekce, vývoz septiků a lapolů. Volejte 731 514 647." />
+  <meta property="og:url" content="https://bws-web-delta.vercel.app/" />
+  <meta property="og:image" content="https://bws-web-delta.vercel.app/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="BWS RENOVA RAIL — tlakové čištění kanalizace a přípojek, Frenštát pod Radhoštěm a okolí" />
   <meta property="og:locale" content="cs_CZ" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Čištění kanalizace Frenštát pod Radhoštěm | BWS RENOVA RAIL" />
+  <meta name="twitter:description" content="Tlakové čištění kanalizace a přípojek, kamerová inspekce, vývoz septiků a lapolů. Volejte 731 514 647." />
+  <meta name="twitter:image" content="https://bws-web-delta.vercel.app/images/og-image.jpg" />
+
+  <!-- Ikony -->
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
+  <link rel="preload" as="image" href="images/hero-technika.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- LocalBusiness schema for SEO + rich snippets -->
+  <!-- Strukturovaná data: LocalBusiness + katalog služeb + WebSite + WebPage + FAQ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "BWS RENOVA RAIL s.r.o.",
-    "description": "Tlakové čištění kanalizace a kanalizačních přípojek, kamerová inspekce, vývoz lapolu a další služby pro domácnosti, firmy, obce i průmysl.",
-    "telephone": "+420731514647",
-    "taxID": "CZ06126502",
-    "vatID": "CZ06126502",
-    "identifier": "06126502",
-    "areaServed": [
-      "Frenštát pod Radhoštěm","Kopřivnice","Rožnov pod Radhoštěm",
-      "Trojanovice","Čeladná","Příbor","Hukvaldy","Štramberk",
-      "Zubří","Tichá","Bordovice"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Záhumenní 45",
-      "postalCode": "742 42",
-      "addressLocality": "Šenov u Nového Jičína",
-      "addressCountry": "CZ"
-    },
-    "openingHours": "Mo-Su",
-    "priceRange": "$$"
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "ProfessionalService"],
+        "@id": "https://bws-web-delta.vercel.app/#firma",
+        "name": "BWS RENOVA RAIL s.r.o.",
+        "legalName": "BWS RENOVA RAIL s.r.o.",
+        "alternateName": "BWS RENOVA RAIL",
+        "url": "https://bws-web-delta.vercel.app/",
+        "logo": "https://bws-web-delta.vercel.app/icon-512.png",
+        "image": [
+          "https://bws-web-delta.vercel.app/images/og-image.jpg",
+          "https://bws-web-delta.vercel.app/images/fekalni-vuz.jpg",
+          "https://bws-web-delta.vercel.app/images/tlakovy-cistic.jpg"
+        ],
+        "description": "Tlakové čištění kanalizace a kanalizačních přípojek (hadice až 80 m), kamerová inspekce, vývoz septiků, jímek a lapolů, tlakové mytí střech a fasád, odstraňování graffiti a čištění stavebních strojů. Pro domácnosti, firmy, obce i průmysl ve Frenštátě pod Radhoštěm a okolí.",
+        "slogan": "Čištění a údržba, na kterou je spolehnutí.",
+        "telephone": "+420731514647",
+        "identifier": "06126502",
+        "taxID": "CZ06126502",
+        "vatID": "CZ06126502",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Záhumenní 45",
+          "postalCode": "742 42",
+          "addressLocality": "Šenov u Nového Jičína",
+          "addressRegion": "Moravskoslezský kraj",
+          "addressCountry": "CZ"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 49.581,
+          "longitude": 17.962
+        },
+        "openingHours": "Mo-Su",
+        "priceRange": "$$",
+        "currenciesAccepted": "CZK",
+        "knowsLanguage": "cs",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+420731514647",
+          "contactType": "customer service",
+          "availableLanguage": "cs",
+          "areaServed": "CZ"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Frenštát pod Radhoštěm" },
+          { "@type": "City", "name": "Kopřivnice" },
+          { "@type": "City", "name": "Rožnov pod Radhoštěm" },
+          { "@type": "City", "name": "Trojanovice" },
+          { "@type": "City", "name": "Čeladná" },
+          { "@type": "City", "name": "Příbor" },
+          { "@type": "City", "name": "Hukvaldy" },
+          { "@type": "City", "name": "Štramberk" },
+          { "@type": "City", "name": "Zubří" },
+          { "@type": "City", "name": "Tichá" },
+          { "@type": "City", "name": "Bordovice" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Služby čištění a údržby",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tlakové čištění kanalizace a kanalizačních přípojek", "description": "Čištění ucpaného a zarostlého potrubí vysokotlakou vodou. Hadice dosáhne až 80 metrů — i delší úseky bez výkopu." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kamerová inspekce kanalizace", "description": "Revize kanalizace inspekční kamerou se záznamem. Přesné a rychlé nalezení příčiny závady." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Čištění střešních žlabů a svodů", "description": "Vyčištění žlabů a svodů od listí, mechu a nánosů. Prevence zatékání a poškození fasády." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tlakové mytí střech a fasád", "description": "Odstranění řas, mechu a nečistot z velkých ploch vodním paprskem o vysokém tlaku." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Odstraňování graffiti", "description": "Profesionální odstranění graffiti z fasád, betonu a dalších povrchů bez poškození podkladu." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vývoz septiků a jímek fekálním vozem 1,5 m³", "description": "Vývoz odpadních vod, septiků a jímek vlastním fekálním vozem s nádrží 1,5 m³." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Čištění stavebních strojů na zakázce", "description": "Čištění bagrů, nakladačů a další stavební techniky přímo na pracovišti zákazníka." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vývoz lapolu", "description": "Odvoz obsahu lapolu (odlučovače tuků) v souladu s legislativou." } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Čištění lapolu", "description": "Důkladné vyčištění odlučovače tuků včetně kontroly funkčnosti." } }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bws-web-delta.vercel.app/#website",
+        "url": "https://bws-web-delta.vercel.app/",
+        "name": "BWS RENOVA RAIL",
+        "publisher": { "@id": "https://bws-web-delta.vercel.app/#firma" },
+        "inLanguage": "cs"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://bws-web-delta.vercel.app/#webpage",
+        "url": "https://bws-web-delta.vercel.app/",
+        "name": "Čištění kanalizace Frenštát pod Radhoštěm | BWS RENOVA RAIL",
+        "description": "Ucpaná kanalizace? Tlakové čištění kanalizace a přípojek, kamerová inspekce, vývoz septiků, jímek a lapolů. Frenštát pod Radhoštěm a okolí. Volejte 731 514 647.",
+        "isPartOf": { "@id": "https://bws-web-delta.vercel.app/#website" },
+        "about": { "@id": "https://bws-web-delta.vercel.app/#firma" },
+        "primaryImageOfPage": "https://bws-web-delta.vercel.app/images/og-image.jpg",
+        "inLanguage": "cs"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://bws-web-delta.vercel.app/#faq",
+        "isPartOf": { "@id": "https://bws-web-delta.vercel.app/#webpage" },
+        "inLanguage": "cs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Co dělat, když mám ucpanou kanalizaci nebo odpad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zavolejte nám na 731 514 647. Ucpané potrubí čistíme vysokotlakou vodou — hadice dosáhne až 80 metrů, takže si poradíme i s delšími úseky bez kopání. Termín domluvíme hned po telefonu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kolik stojí čištění kanalizace?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cena závisí na délce a stavu potrubí a na přístupnosti místa. Orientační cenu vám řekneme zdarma po krátkém telefonátu, konečnou po prohlídce na místě. V naší oblasti působnosti neúčtujeme zbytečné příplatky za dopravu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak rychle dokážete přijet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jsme místní firma s vlastní technikou, takže se obvykle domluvíme na nejbližší možný termín. U akutních havárií, jako je přetékající kanalizace nebo zatopený suterén, se snažíme přijet co nejdříve — zavolejte a domluvíme se."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Děláte i krtkování odpadů?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ano. Místo klasického mechanického krtkování používáme tlakové čištění vodou, které potrubí nejen zprůchodní, ale i vyčistí po celém obvodu — od kuchyňských odpadů přes přípojky až po hlavní řady."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "K čemu je kamerová inspekce kanalizace?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Inspekční kamerou se záznamem přesně najdeme příčinu problému — prasklinu, prorostlé kořeny nebo špatný spád potrubí. Hodí se také před koupí nemovitosti, po opakovaném ucpávání nebo ke kontrole nové přípojky před kolaudací."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vyvážíte i septiky, jímky a lapoly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ano, máme vlastní kombinovaný fekální vůz s nádrží 1,5 m³. Vyvážíme septiky, jímky i lapoly (odlučovače tuků) a obsah likvidujeme v souladu s legislativou."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kde všude působíte?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ve Frenštátě pod Radhoštěm a okolí — Kopřivnice, Rožnov pod Radhoštěm, Trojanovice, Čeladná, Příbor, Hukvaldy, Štramberk, Zubří, Tichá, Bordovice a další obce v regionu. Po domluvě přijedeme i dál."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -71,6 +234,7 @@
       <a href="#technika">Technika</a>
       <a href="#proc-my">Proč my</a>
       <a href="#oblast">Oblast</a>
+      <a href="#faq">Dotazy</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
 
@@ -87,7 +251,7 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-media" aria-hidden="true">
-      <img src="images/hero-technika.jpg" alt="" class="hero-bg-img" />
+      <img src="images/hero-technika.jpg" alt="" class="hero-bg-img" width="1055" height="720" fetchpriority="high" decoding="async" />
       <div class="hero-overlay"></div>
       <div class="hero-noise"></div>
     </div>
@@ -286,8 +450,9 @@
         <article class="equipment" data-reveal>
           <figure class="equipment-photo">
             <img src="images/fekalni-vuz.jpg"
-                 alt="Kombinovaný sací a tlakový vůz Rioned s nádrží 1,5 m³"
-                 loading="lazy"
+                 alt="Kombinovaný sací a tlakový vůz Rioned s nádrží 1,5 m³ na vývoz septiků a čištění kanalizace"
+                 width="1536" height="1024"
+                 loading="lazy" decoding="async"
                  onerror="this.parentElement.classList.add('photo-missing'); this.remove();" />
             <figcaption class="equipment-badge">Rioned · 1,5&nbsp;m³</figcaption>
           </figure>
@@ -305,8 +470,9 @@
         <article class="equipment equipment-reverse" data-reveal>
           <figure class="equipment-photo">
             <img src="images/tlakovy-cistic.jpg"
-                 alt="Tlakový čistič kanalizace Rioned na mobilním přívěsu"
-                 loading="lazy"
+                 alt="Vysokotlaký čistič kanalizace Rioned na mobilním přívěsu pro tlakové čištění potrubí"
+                 width="1600" height="900"
+                 loading="lazy" decoding="async"
                  onerror="this.parentElement.classList.add('photo-missing'); this.remove();" />
             <figcaption class="equipment-badge">Rioned · WJ</figcaption>
           </figure>
@@ -348,6 +514,68 @@
         <li>Bordovice</li>
         <li class="more">a&nbsp;další</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">ČASTÉ DOTAZY</span>
+        <h2>Na co se nás ptáte nejčastěji</h2>
+        <p class="section-lead">Rychlé odpovědi na nejčastější otázky ke kanalizaci, cenám i termínům. Nenašli jste tu svou? <strong>Zavolejte 731 514 647.</strong></p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" data-reveal>
+          <summary><h3>Co dělat, když mám ucpanou kanalizaci nebo odpad?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+          <div class="faq-answer">
+            <p>Zavolejte nám na <a href="tel:+420731514647"><strong>731&nbsp;514&nbsp;647</strong></a>. Ucpané potrubí čistíme vysokotlakou vodou — hadice dosáhne <strong>až 80 metrů</strong>, takže si poradíme i s delšími úseky bez kopání. Termín domluvíme hned po telefonu.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal>
+          <summary><h3>Kolik stojí čištění kanalizace?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+          <div class="faq-answer">
+            <p>Cena závisí na délce a stavu potrubí a na přístupnosti místa. Orientační cenu vám řekneme <strong>zdarma po krátkém telefonátu</strong>, konečnou po prohlídce na místě. V naší oblasti působnosti neúčtujeme zbytečné příplatky za dopravu.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal>
+          <summary><h3>Jak rychle dokážete přijet?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+          <div class="faq-answer">
+            <p>Jsme místní firma s vlastní technikou, takže se obvykle domluvíme na nejbližší možný termín. U akutních havárií, jako je přetékající kanalizace nebo zatopený suterén, se snažíme přijet co nejdříve — zavolejte a domluvíme se.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal>
+          <summary><h3>Děláte i krtkování odpadů?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+          <div class="faq-answer">
+            <p>Ano. Místo klasického mechanického krtkování používáme <strong>tlakové čištění vodou</strong>, které potrubí nejen zprůchodní, ale i vyčistí po celém obvodu — od kuchyňských odpadů přes přípojky až po hlavní řady.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal>
+          <summary><h3>K čemu je kamerová inspekce kanalizace?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+          <div class="faq-answer">
+            <p>Inspekční kamerou se záznamem přesně najdeme příčinu problému — prasklinu, prorostlé kořeny nebo špatný spád potrubí. Hodí se také <strong>před koupí nemovitosti</strong>, po opakovaném ucpávání nebo ke kontrole nové přípojky před kolaudací.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal>
+          <summary><h3>Vyvážíte i septiky, jímky a lapoly?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+          <div class="faq-answer">
+            <p>Ano, máme vlastní kombinovaný fekální vůz s nádrží <strong>1,5&nbsp;m³</strong>. Vyvážíme septiky, jímky i lapoly (odlučovače tuků) a obsah likvidujeme v souladu s legislativou.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal>
+          <summary><h3>Kde všude působíte?</h3><span class="faq-icon" aria-hidden="true"></span></summary>
+          <div class="faq-answer">
+            <p>Ve Frenštátě pod Radhoštěm a okolí — Kopřivnice, Rožnov pod Radhoštěm, Trojanovice, Čeladná, Příbor, Hukvaldy, Štramberk, Zubří, Tichá, Bordovice a další obce v regionu. Po domluvě přijedeme i dál.</p>
+          </div>
+        </details>
+      </div>
     </div>
   </section>
 
@@ -406,6 +634,6 @@
   <span>Zavolat</span>
 </a>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
