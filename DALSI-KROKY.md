@@ -6,10 +6,10 @@
 
 ## 1. Google Search Console (GSC) — priorita ⭐
 
-- [ ] Na https://search.google.com/search-console přidat majetek typu **URL prefix**: `https://bws-web-delta.vercel.app/`
-- [ ] Zvolit ověření přes **HTML tag** → zkopírovat hodnotu `content` z ověřovací meta značky a **poslat Claudovi** (vloží ji do obou HTML souborů)
-- [ ] Po ověření odeslat sitemapu: `https://bws-web-delta.vercel.app/sitemap.xml`
-- [ ] Požádat o indexaci hlavní stránky (Kontrola URL → Požádat o indexaci)
+- [x] Majetek přidán do GSC
+- [x] **Ověřeno přes Google Analytics** (ne HTML tagem) — díky GA4 tagu na webu. Do HTML se tedy nic vkládat nemusí.
+- [ ] Odeslat sitemapu v GSC: `https://bws-web-delta.vercel.app/sitemap.xml` (Sitemapy → vložit `sitemap.xml` → Odeslat). Sitemapa je živá (HTTP 200).
+- [ ] Požádat o indexaci hlavní stránky (Kontrola URL → vložit `https://bws-web-delta.vercel.app/` → Požádat o indexaci)
 
 ## 2. Google Analytics 4 (GA4) — priorita ⭐
 
@@ -17,7 +17,7 @@
 - [x] Measurement ID `G-NM4WW646PM` dodáno
 - [x] gtag snippet vložen do **index.html** (ne do v2 — noindex náhled). Události: `phone_call_click` (hlavní konverze — kliknutí na telefon kdekoli na webu), `faq_open` (rozkliknutí FAQ), `view_contact` (scroll do kontaktu)
 - [ ] V GA4 označit `phone_call_click` jako **klíčovou událost** (Správce → Události → přepnout „Označit jako klíčovou událost")
-- [ ] Propojit GA4 ↔ GSC (Správce → Propojení služeb → Search Console) — až bude GSC ověřená
+- [ ] Propojit GA4 ↔ GSC — POZOR, jde o samostatný „Odkaz na Search Console" (Správce → Propojení služeb → Odkazy na Search Console → Propojit). Ověření vlastnictví přes GA4 tohle NEudělá; teprve tímto tečou data z vyhledávání do GA4.
 
 ## 3. Google Business Profile (firma na Mapách) — velký dopad na lokální SEO
 
