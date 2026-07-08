@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://bws-web-delta.vercel.app/</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://www.bwsrenova.cz/</loc>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://bws-web-delta.vercel.app/images/og-image.jpg</image:loc>
+      <image:loc>https://www.bwsrenova.cz/images/og-image.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://bws-web-delta.vercel.app/images/fekalni-vuz.jpg</image:loc>
+      <image:loc>https://www.bwsrenova.cz/images/fekalni-vuz.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://bws-web-delta.vercel.app/images/tlakovy-cistic.jpg</image:loc>
+      <image:loc>https://www.bwsrenova.cz/images/tlakovy-cistic.jpg</image:loc>
     </image:image>
   </url>
 </urlset>

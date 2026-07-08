@@ -7,4 +7,4 @@ User-agent: *
 Allow: /
 Disallow: /v2.html
 
-Sitemap: https://bws-web-delta.vercel.app/sitemap.xml
+Sitemap: https://www.bwsrenova.cz/sitemap.xml

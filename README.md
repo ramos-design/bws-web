@@ -1,6 +1,6 @@
 # BWS RENOVA RAIL — Onepage web
 
-Statický onepage web pro BWS RENOVA RAIL s.r.o. (čištění kanalizace, Frenštát pod Radhoštěm a okolí). Nasazeno na Vercelu — projekt `bws-web`, produkční URL **https://bws-web-delta.vercel.app**.
+Statický onepage web pro BWS RENOVA RAIL s.r.o. (čištění kanalizace, Frenštát pod Radhoštěm a okolí). Nasazeno na Vercelu — projekt `bws-web`, produkční URL **https://www.bwsrenova.cz**.
 
 ## Struktura
 
@@ -25,17 +25,11 @@ Statický onepage web pro BWS RENOVA RAIL s.r.o. (čištění kanalizace, Frenš
 - **Výkon**: preload + `fetchpriority=high` na hero obrázku, `width/height` na všech `<img>` (proti CLS), `loading=lazy` mimo viewport, `defer` na skriptu, cache hlavičky.
 - **AI/LLM viditelnost**: `llms.txt`, robots.txt vítající AI crawlery, FAQ s přímými odpověďmi, konzistentní NAP (název/adresa/telefon) ve strojově čitelné podobě.
 
-## ⚠️ Při přechodu na vlastní doménu
+## Vlastní doména — hotovo ✅
 
-Až bude vlastní doména (např. `bwsrenova.cz`), je potřeba nahradit `https://bws-web-delta.vercel.app` novou doménou v těchto souborech:
+Web běží na **https://www.bwsrenova.cz** (kanonický tvar je s `www`; `bwsrenova.cz` i stará `bws-web-delta.vercel.app` se 301 přesměrovávají sem — redirect je v `vercel.json`).
 
-1. `index.html` — canonical, og:url, og:image, twitter:image a všechny URL v JSON-LD
-2. `v2.html` — totéž
-3. `robots.txt` — řádek `Sitemap:`
-4. `sitemap.xml` — `<loc>` + image URL
-5. `llms.txt` — odkaz na hlavní stránku
-
-Hromadně: najít a nahradit řetězec `bws-web-delta.vercel.app`. Poté v Google Search Console přidat novou doménu a znovu odeslat sitemapu.
+Kdyby se doména někdy zase měnila, nahraď řetězec `www.bwsrenova.cz` napříč: `index.html`, `v2.html`, `robots.txt` (`Sitemap:`), `sitemap.xml` (`<loc>` + image URL), `llms.txt` a redirect v `vercel.json`. Poté v Google Search Console přidat nový majetek a odeslat sitemapu.
 
 ## Údržba
 

@@ -25,4 +25,4 @@ Klíčová fakta:
 
 ## Stránky
 
-- [Hlavní stránka](https://bws-web-delta.vercel.app/): služby, technika, oblast působnosti, časté dotazy a kontakt
+- [Hlavní stránka](https://www.bwsrenova.cz/): služby, technika, oblast působnosti, časté dotazy a kontakt

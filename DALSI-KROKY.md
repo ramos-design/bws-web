@@ -1,15 +1,15 @@
 # Další kroky — BWS RENOVA RAIL web
 
-> Stav k 7. 7. 2026: Kompletní SEO hotové a nasazené na https://bws-web-delta.vercel.app
+> Stav k 8. 7. 2026: Kompletní SEO hotové a nasazené na **https://www.bwsrenova.cz** (vlastní doména; stará vercelová URL se 301 přesměrovává sem). GA4 měření aktivní.
 > (meta tagy, strukturovaná data, FAQ sekce, robots.txt, sitemap.xml, llms.txt, favicony, OG obrázek, cache/security hlavičky).
 > Tento soubor je checklist toho, co zbývá. Postup výměny domény je v [README.md](README.md).
 
 ## 1. Google Search Console (GSC) — priorita ⭐
 
-- [x] Majetek přidán do GSC
-- [x] **Ověřeno přes Google Analytics** (ne HTML tagem) — díky GA4 tagu na webu. Do HTML se tedy nic vkládat nemusí.
-- [ ] Odeslat sitemapu v GSC: `https://bws-web-delta.vercel.app/sitemap.xml` (Sitemapy → vložit `sitemap.xml` → Odeslat). Sitemapa je živá (HTTP 200).
-- [ ] Požádat o indexaci hlavní stránky (Kontrola URL → vložit `https://bws-web-delta.vercel.app/` → Požádat o indexaci)
+- [x] Majetek přidán do GSC (vercelová URL) + **ověřeno přes Google Analytics** (ne HTML tagem) — díky GA4 tagu na webu.
+- [ ] ⭐ **Web přešel na vlastní doménu → v GSC přidat NOVÝ majetek pro `bwsrenova.cz`.** Doporučeno typ **Doména** (`bwsrenova.cz`, ověření přes DNS TXT záznam) — pokryje www i non-www i http/https naráz. Alternativně URL-prefix `https://www.bwsrenova.cz/`.
+- [ ] Odeslat sitemapu v novém majetku: `https://www.bwsrenova.cz/sitemap.xml` (Sitemapy → vložit `sitemap.xml` → Odeslat). Sitemapa je živá (HTTP 200).
+- [ ] Požádat o indexaci hlavní stránky (Kontrola URL → vložit `https://www.bwsrenova.cz/` → Požádat o indexaci)
 
 ## 2. Google Analytics 4 (GA4) — priorita ⭐
 
@@ -31,13 +31,13 @@
 - [ ] Registrace na https://www.firmy.cz (zdarma) — stejné údaje jako Google profil
 - [ ] Přidat web do Seznam Webmaster: https://reporter.seznam.cz
 
-## 5. Vlastní doména (např. bwsrenova.cz)
+## 5. Vlastní doména — bwsrenova.cz ✅ nasazeno 8. 7. 2026
 
-- [ ] Koupit doménu (Wedos, Forpsi, …)
-- [ ] Přidat ji ve Vercelu: projekt `bws-web` → Settings → Domains
-- [ ] Provést výměnu URL v kódu podle checklistu v [README.md](README.md) (hromadně nahradit `bws-web-delta.vercel.app`)
-- [ ] V GSC přidat nový majetek pro novou doménu + znovu odeslat sitemapu
-- [ ] Aktualizovat URL v Google Business Profilu a na Firmy.cz
+- [x] Doména koupena a přidána ve Vercelu (www.bwsrenova.cz servíruje web, non-www → www 308)
+- [x] Výměna všech URL v kódu (`bws-web-delta.vercel.app` → `www.bwsrenova.cz`) — 46 výskytů v index/v2/sitemap/robots/llms
+- [x] 301 přesměrování staré vercelové URL → nová doména (v `vercel.json`) proti duplicitnímu obsahu
+- [ ] V GSC přidat nový majetek pro `bwsrenova.cz` + odeslat sitemapu — viz bod 1
+- [ ] Aktualizovat URL v Google Business Profilu a na Firmy.cz (až budou založené — bod 3/4)
 
 ## 6. Chybějící data — dodat Claudovi, doplní je do webu
 
