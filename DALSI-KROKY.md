@@ -13,10 +13,11 @@
 
 ## 2. Google Analytics 4 (GA4) — priorita ⭐
 
-- [ ] Na https://analytics.google.com založit účet + službu „BWS RENOVA RAIL", datový tok pro web
-- [ ] Zkopírovat **Measurement ID** (formát `G-XXXXXXXXXX`) a **poslat Claudovi**
-- [ ] Claude vloží gtag snippet vč. **měření kliknutí na telefon** (hlavní konverze webu) a událostí pro FAQ/scroll
-- [ ] Propojit GA4 ↔ GSC (Správce → Propojení služeb → Search Console)
+- [x] Na https://analytics.google.com založit účet + službu „BWS RENOVA RAIL", datový tok pro web
+- [x] Measurement ID `G-NM4WW646PM` dodáno
+- [x] gtag snippet vložen do **index.html** (ne do v2 — noindex náhled). Události: `phone_call_click` (hlavní konverze — kliknutí na telefon kdekoli na webu), `faq_open` (rozkliknutí FAQ), `view_contact` (scroll do kontaktu)
+- [ ] V GA4 označit `phone_call_click` jako **klíčovou událost** (Správce → Události → přepnout „Označit jako klíčovou událost")
+- [ ] Propojit GA4 ↔ GSC (Správce → Propojení služeb → Search Console) — až bude GSC ověřená
 
 ## 3. Google Business Profile (firma na Mapách) — velký dopad na lokální SEO
 
@@ -40,9 +41,10 @@
 
 ## 6. Chybějící data — dodat Claudovi, doplní je do webu
 
-- [ ] **Provozní doba** (např. Po–Ne 7:00–18:00?) → doplní se `openingHoursSpecification` do strukturovaných dat
-- [ ] **E-mail firmy** — web tvrdí „telefonem, SMS nebo e-mailem", ale e-mail nikde není → doplní se do patičky, schématu i llms.txt
-- [ ] **Odkazy na sociální sítě / profily** (Facebook, IG, …), pokud existují → do `sameAs`
+> Rozhodnuto 8. 7. 2026: firma tyto údaje nemá / neřešíme. Nic se nedoplňuje.
+- [x] ~~Provozní doba~~ — neřešíme
+- [x] ~~E-mail firmy~~ — neexistuje, web zůstává u „telefonem / SMS"
+- [x] ~~Sociální sítě~~ — neexistují
 
 ## 7. Jednorázová kontrola (klikací, 5 minut)
 
@@ -53,7 +55,7 @@
 
 ## 8. Rozhodnutí klienta
 
-- [ ] **index.html vs. v2.html** — rozhodnout, která verze je finální. Pokud v2, Claude ji povýší na hlavní (převezme obsah, ale zachová SEO hlavičku s indexací; v2 URL zůstane noindex)
+- [x] **index.html vs. v2.html** — rozhodnuto 8. 7. 2026: **finální je index.html** (titulek „Tlakové čištění a údržba kanalizací" — silnější na SEO). v2.html zůstává jako `noindex` pracovní náhled; jediný rozdíl byl hero titulek.
 
 ## 9. Výhled (nice-to-have, až po bodech 1–5)
 

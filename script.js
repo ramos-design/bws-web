@@ -46,4 +46,46 @@
   // Year in footer
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // GA4 event tracking — no-op na stránkách bez gtag (např. v2.html)
+  const track = (name, params) => {
+    if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+  };
+
+  // Hlavní konverze: kliknutí na telefonní číslo
+  document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      track('phone_call_click', {
+        // odkud v rámci stránky uživatel volal (header, hero, patička…)
+        link_location: link.className || 'unknown',
+        phone_number: link.getAttribute('href').replace('tel:', ''),
+      });
+    });
+  });
+
+  // FAQ — rozkliknutí otázky
+  document.querySelectorAll('details.faq-item').forEach((item) => {
+    item.addEventListener('toggle', () => {
+      if (!item.open) return;
+      const q = item.querySelector('summary h3');
+      track('faq_open', { question: q ? q.textContent.trim() : '' });
+    });
+  });
+
+  // Scroll do kontaktní sekce (měkká konverze — jednou za návštěvu)
+  const contact = document.getElementById('kontakt');
+  if (contact && 'IntersectionObserver' in window) {
+    const contactIo = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            track('view_contact');
+            contactIo.disconnect();
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+    contactIo.observe(contact);
+  }
 })();
